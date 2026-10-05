@@ -1,0 +1,33 @@
+{
+  "name": "sms-stt-matcher",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/next.mjs dev --webpack",
+    "build": "node scripts/next.mjs build --webpack && node scripts/prepare-standalone.mjs",
+    "start": "node scripts/start.mjs",
+    "test": "vitest run --root .",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "^16.3.8",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tesseract.js": "^6.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@next/swc-wasm-nodejs": "^16.3.8",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
